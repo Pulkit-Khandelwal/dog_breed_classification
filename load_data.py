@@ -170,7 +170,9 @@ def to_numpy_array(data_frame=None, image_shape=(224, 224), data_path=None):
 
 def labels_to_logical(labels_list=None):
     """
-    Converts integer labels to one-shot encoding
+    Converts integer labels to one-shot encoding.
+    This is required to train our models. Since,
+    we predict using categorical cross entropy
 
     :param labels_list:
     :return:
